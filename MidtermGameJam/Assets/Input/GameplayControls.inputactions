@@ -30,25 +30,9 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Attack",
+                    "name": "Interact",
                     "type": "PassThrough",
                     "id": "b558cfb6-533c-4825-8d34-629e55a43ad6",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "AbilityOne",
-                    "type": "PassThrough",
-                    "id": "911e8b75-c1f3-4655-b4af-aa76a00df9a7",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "AbilityTwo",
-                    "type": "PassThrough",
-                    "id": "bf0332b2-c8e0-49b4-a5ac-50c0b98d8f5c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -135,33 +119,11 @@
                 {
                     "name": "",
                     "id": "2c2a34a4-884d-420c-a680-e3a588f9e014",
-                    "path": "<Mouse>/leftButton",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b5f47628-204c-4164-8a3f-3de37d4fdc7a",
-                    "path": "<Keyboard>/1",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "AbilityOne",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "27e08300-4871-4183-8ec7-bb665f06c271",
-                    "path": "<Keyboard>/2",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "AbilityTwo",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

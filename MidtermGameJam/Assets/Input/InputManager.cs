@@ -45,19 +45,10 @@ public class InputManager : MonoBehaviour
         return gameplayControls.MainGameplayControls.Jump.triggered;
     }
 
-    public bool PressedMouse0()
+    public bool Interacted()
     {
-        return gameplayControls.MainGameplayControls.Attack.triggered;
+        return gameplayControls.MainGameplayControls.Interact.triggered;
     }
 
-    public bool PressedAbilityOne()
-    {
-        return gameplayControls.MainGameplayControls.AbilityOne.triggered;
-    }
-
-    public bool PressedAbilityTwo()
-    {
-        return gameplayControls.MainGameplayControls.AbilityTwo.triggered;
-    }
 
 }
