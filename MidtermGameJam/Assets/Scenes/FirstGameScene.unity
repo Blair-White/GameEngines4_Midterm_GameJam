@@ -4768,8 +4768,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5dd3329f56e12c4dae78290d3cb7cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalSpeed: 35
-  verticalSpeed: 35
+  horizontalSpeed: 25
+  verticalSpeed: 25
   clampAngle: 80
 --- !u!1001 &1061010612
 PrefabInstance:
