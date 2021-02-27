@@ -39,6 +39,7 @@ public class UiController : MonoBehaviour
     {
         if (isPaused)
         {
+            Cursor.visible = false;
             PauseMenu.SetActive(false);
             Time.timeScale = 1;
             isPaused = false;
@@ -46,6 +47,7 @@ public class UiController : MonoBehaviour
         else
         {
             PauseMenu.SetActive(true);
+            Cursor.visible = true;
             Time.timeScale = 0;
             isPaused = true;
         }
