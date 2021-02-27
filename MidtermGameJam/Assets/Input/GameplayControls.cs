@@ -44,7 +44,7 @@ public class @GameplayControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""Interact"",
-                    ""type"": ""PassThrough"",
+                    ""type"": ""Button"",
                     ""id"": ""b558cfb6-533c-4825-8d34-629e55a43ad6"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
@@ -52,7 +52,7 @@ public class @GameplayControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""Pause"",
-                    ""type"": ""PassThrough"",
+                    ""type"": ""Button"",
                     ""id"": ""2d827c80-bcc5-4d45-aac9-2c8eab733b7f"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
