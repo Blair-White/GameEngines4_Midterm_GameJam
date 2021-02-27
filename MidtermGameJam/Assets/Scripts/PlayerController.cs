@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public GameObject brush, brushStick;
     private Animator brushAnimator;
     public Material matRed, matGreen, matBlue;
-    private string BrushColor;
+    public string BrushColor;
     private CharacterController controller;
     private Vector3 playerVelocity;
     [SerializeField]
@@ -56,6 +56,10 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    private void PoolInteracted()
+    {
+        brushAnimator.SetBool("isActive", true);
+    }
     private void Interacted(string color)
     {
         BrushColor = color;
