@@ -232,4 +232,11 @@ AnimationClip:
     script: {fileID: 0}
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 1
+    functionName: EndBrushStroke
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: ff673d1bf72fd9047953480900c75672, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

@@ -36,10 +36,13 @@ public class BucketController : MonoBehaviour
             if(InputManager.Instance.Interacted())
             {
                 mPlayer.SendMessage("Interacted", myColor, SendMessageOptions.RequireReceiver);
+                this.GetComponent<Animator>().SetBool("isHit", true);
             }
         }
 
     }
+
+    void EndAnimations() { this.GetComponent<Animator>().SetBool("isHit", false); }
 
     void LeftRange()
     {

@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-    public GameObject brush;
+    public GameObject brush, brushStick;
+    private Animator brushAnimator;
     public Material matRed, matGreen, matBlue;
     private string BrushColor;
     private CharacterController controller;
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         inputManager = InputManager.Instance;
         cameraTransform = Camera.main.transform;
+        brushAnimator = brushStick.GetComponent<Animator>();
     }
 
 
@@ -74,5 +76,6 @@ public class PlayerController : MonoBehaviour
                 break;
         }
 
+        brushAnimator.SetBool("isActive", true);
     }
 }
