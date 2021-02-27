@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResultController : MonoBehaviour
 {
-    public GameObject Pool1, Pool2, Door;
+    public GameObject Pool1, Pool2, Door, effect, uiMgr;
     public string CorrectColor, MyColor;
     private Material myMat;
     public Material matGreen, matRed, matBlue, matYellow, matPurple, matCyan;
@@ -23,8 +23,10 @@ public class ResultController : MonoBehaviour
             if (this.MyColor == CorrectColor)
             {
                 Door.SendMessage("Open");
+                uiMgr.SendMessage("RoomCompleted");
                 this.GetComponent<Animator>().SetBool("isOpen", true);
                 isOpen = true;
+                effect.SetActive(true);
             }
         if(isOpen && !endedAnim)
         {
@@ -34,6 +36,7 @@ public class ResultController : MonoBehaviour
                 this.GetComponent<Animator>().SetBool("isOpen", false);
                 count = 0;
                 endedAnim = true;
+                effect.SetActive(false);
             }
         }
     }

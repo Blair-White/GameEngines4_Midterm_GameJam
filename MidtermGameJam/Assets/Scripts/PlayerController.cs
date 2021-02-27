@@ -83,4 +83,12 @@ public class PlayerController : MonoBehaviour
 
      
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.name == "EndGamePortal")
+        {
+            other.SendMessage("Entered");
+        }
+    }
 }

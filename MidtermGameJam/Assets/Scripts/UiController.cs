@@ -28,6 +28,7 @@ public class UiController : MonoBehaviour
     {
         intScore += 100 - intTime;
         Score.GetComponent<TextMeshProUGUI>().text = intScore.ToString();
+        timePassed = 0; intTime = 0;
     }
     private void GameCompleted()
     {
@@ -51,6 +52,11 @@ public class UiController : MonoBehaviour
     }
     
     public void RestartGame()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(1);
+    }
+    public void GoToMain()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
