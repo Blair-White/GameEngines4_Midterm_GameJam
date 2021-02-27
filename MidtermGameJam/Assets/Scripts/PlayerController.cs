@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
+    public GameObject brush;
+    public Material matRed, matGreen, matBlue;
+    private string BrushColor;
     private CharacterController controller;
     private Vector3 playerVelocity;
+    [SerializeField]
     private bool groundedPlayer;
     [SerializeField]
     private float playerSpeed = 2.0f;
@@ -29,6 +33,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         groundedPlayer = controller.isGrounded;
+
         if (groundedPlayer && playerVelocity.y < 0)
         {
             playerVelocity.y = 0f;
@@ -45,11 +50,29 @@ public class PlayerController : MonoBehaviour
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+
+
     }
 
+    private void Interacted(string color)
+    {
+        BrushColor = color;
+        switch (color)
+        {
+            case "Blue":
+                brush.GetComponent<MeshRenderer>().material = matBlue;
+                break;
+            case "Red":
+                brush.GetComponent<MeshRenderer>().material = matRed;
+                break;
 
+            case "Green":
+                brush.GetComponent<MeshRenderer>().material = matGreen;
+                break;
+               
+            default:
+                break;
+        }
 
-
-
-   
+    }
 }
