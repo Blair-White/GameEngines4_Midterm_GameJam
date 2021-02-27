@@ -63,6 +63,7 @@ public class PlayerController : MonoBehaviour
     private void Interacted(string color)
     {
         BrushColor = color;
+        brushAnimator.SetBool("isActive", true);
         switch (color)
         {
             case "Blue":
@@ -80,6 +81,6 @@ public class PlayerController : MonoBehaviour
                 break;
         }
 
-        brushAnimator.SetBool("isActive", true);
+     
     }
 }

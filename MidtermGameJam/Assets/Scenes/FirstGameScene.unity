@@ -1194,6 +1194,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca9d44076cde884197f73988b76ca32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pool1: {fileID: 762511977}
+  Pool2: {fileID: 1042747709}
+  Door: {fileID: 1461363719}
+  CorrectColor: Purple
+  MyColor: 
+  matGreen: {fileID: 2100000, guid: 64eb8a193792deb468d893d7f52b1b2f, type: 2}
+  matRed: {fileID: 2100000, guid: 82434622323b27c4292af850f60458a3, type: 2}
+  matBlue: {fileID: 2100000, guid: b1a0a61acbc5add4fb7654033750b737, type: 2}
+  matYellow: {fileID: 2100000, guid: 44d6429bc14b5c541bdcd1fedf0989bc, type: 2}
+  matPurple: {fileID: 2100000, guid: 2d86cf6921e62364f9c18e86df644ad0, type: 2}
+  matCyan: {fileID: 2100000, guid: 005c0b09858b48742ae9beebbed6cc2b, type: 2}
 --- !u!1 &425591822
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,6 +1783,7 @@ MonoBehaviour:
   myArm: {fileID: 1483460197}
   myArm2: {fileID: 1523037584}
   mPlayer: {fileID: 0}
+  ResultCube: {fileID: 408358814}
   myColor: 
   matGreen: {fileID: 2100000, guid: 64eb8a193792deb468d893d7f52b1b2f, type: 2}
   matBlue: {fileID: 2100000, guid: b1a0a61acbc5add4fb7654033750b737, type: 2}
@@ -2528,6 +2540,7 @@ MonoBehaviour:
   myArm: {fileID: 1350464542}
   myArm2: {fileID: 770192956}
   mPlayer: {fileID: 0}
+  ResultCube: {fileID: 408358814}
   myColor: 
   matGreen: {fileID: 2100000, guid: 64eb8a193792deb468d893d7f52b1b2f, type: 2}
   matBlue: {fileID: 2100000, guid: b1a0a61acbc5add4fb7654033750b737, type: 2}
@@ -3945,6 +3958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1461363720}
   - component: {fileID: 1461363721}
+  - component: {fileID: 1461363722}
   m_Layer: 0
   m_Name: DoorHolder
   m_TagString: Untagged
@@ -3986,6 +4000,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1461363722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461363719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b9d0d2bce17f8c4783541d6b6535752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1483460197
 GameObject:
   m_ObjectHideFlags: 0

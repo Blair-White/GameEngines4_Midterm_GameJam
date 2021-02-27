@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PoolController : MonoBehaviour
 {
-    public GameObject myArm, myArm2, mPlayer;
+    public GameObject myArm, myArm2, mPlayer, ResultCube;
     public string myColor;
     private Material myMaterial;
     public Material matGreen, matBlue, matRed;
@@ -14,6 +14,7 @@ public class PoolController : MonoBehaviour
     void Start()
     {
         mPlayer = GameObject.Find("Player");
+        myColor = "Default";
     }
 
     // Update is called once per frame
@@ -56,6 +57,7 @@ public class PoolController : MonoBehaviour
     void interacted()
     {
         mPlayer.SendMessage("PoolInteracted");
+        
         switch (mPlayer.GetComponent<PlayerController>().BrushColor)
         {
             case "Blue":
@@ -81,6 +83,7 @@ public class PoolController : MonoBehaviour
             default:
                 break;
         }
+        ResultCube.SendMessage("SetColor");
     }
 
 
